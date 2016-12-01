@@ -10,8 +10,8 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font: 'Crimson Text', serif;
-  margin-left: 0.5em;
+  font: "Crimson Text", serif;
+  margin: .5em;
 
   color: #222;
 }
@@ -19,23 +19,33 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
-@media only screen and (min-width: 19.875em) {
+
+body {
+  line-height: 133%;
+  margin: 8px;
+}
+
 article {
   max-width: 43em;
 }
 
 article h1 {
   font-weight: normal;
-  margin-top: 1.2em;
+  margin-top: 1.13em;
 }
 
 article header {
   border-bottom: 1px solid #999;
 }
 
+article p {
+  max-width: 43em;
+}
+
 article header p {
   font-style: italic;
-  margin-top: -1.2em;
+  margin-top: -1em;
+  margin-bottom: 1.3em;
 }
 
 article > p:last-child {
@@ -55,13 +65,60 @@ blockquote {
   color: #999;
 }
 
-ol {
+article ol {
   margin-left: -1.5em;
 }
 
+@media only screen and (min-width: 19.875em) {
+
+  body {
+    line-height: 133%;
+
   }
 
+  article {
+    max-width: 43em;
+  }
+
+  article h1 {
+    font-weight: normal;
+    margin-top: 1.13em;
+  }
+
+  article header {
+    border-bottom: 1px solid #999;
+  }
+
+  article header p {
+    font-style: italic;
+    margin-top: -1em;
+    margin-bottom: 1.3em;
+  }
+
+  article > p:last-child {
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #999;
+  }
+
+  blockquote {
+    max-width: 24em;
+    color: #555;
+    font-size: 1.125rem;
+    margin: 0;
+  }
+
+  .quote {
+    color: #999;
+  }
+
+  ol {
+    margin-left: -1.5em;
+  }
+}
+
 @media only screen and (min-width: 25em) {
+
   article {
     max-width: 43em;
   }
@@ -103,11 +160,13 @@ ol {
 }
 
 @media only screen and (min-width: 38em) {
-html {
-  line-height: 1.5em;
-  margin-left: 0.5em;
-  font-size: 109%;
-}
+
+  body {
+    line-height: 150%;
+    margin-left: .5em;
+    font-size: 109%;
+  }
+
   article {
     max-width: 43em;
   }
@@ -149,11 +208,13 @@ html {
 }
 
 @media only screen and (min-width: 60em) {
-html {
-  line-height: 1.6em;
-  margin-left: 5em;
-  font-size: 128%;
-}
+
+  body {
+    line-height: 160%;
+    margin-left: 5em;
+    font-size: 128%;
+  }
+
   article {
     max-width: 43em;
   }
@@ -197,11 +258,13 @@ html {
 }
 
 @media only screen and (min-width: 90em) {
-html {
-  line-height: 1.5em;
-  margin-left: 14.7em;
-  font-size: 1.2rem;
-}
+
+  body {
+    line-height: 150%;
+    margin-left: 14.7em;
+    font-size: 1.2rem;
+  }
+
   article {
     max-width: 42em;
   }
